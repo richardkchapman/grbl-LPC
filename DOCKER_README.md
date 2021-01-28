@@ -7,8 +7,7 @@ This will create a temporal instance (changes will be dropped on exit) with a bi
 
 If you are using selinux you may need to add a ```:z``` to the end of the -v parameter to indicate the mount is shared.
 
-```docker run -it --rm -v `pwd`:/root:z ryankurte/docker-arm-embedded /bin/bash```
-
+```docker run -it --rm -v `pwd`:/root:z ryankurte/docker-arm-embedded /bin/bash -c 'cd root ; make'
 https://docs.docker.com/storage/bind-mounts/
 
 ### Building grbl-LPC
